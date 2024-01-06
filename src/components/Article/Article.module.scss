@@ -1,0 +1,92 @@
+@import '../../assets/colors/colors-variables.scss';
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 15px;
+  width: 100%;
+  min-height: 140px;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba($black, $alpha: 0.15);
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.single_page_article {
+  min-height: 800px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.title_line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.title {
+  max-width: 600px;
+  color: $main-blue;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.1s ease-in-out;
+
+  &:hover {
+    color: $hover-blue;
+  }
+}
+
+.user_icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.description {
+  max-width: 642px;
+  overflow-wrap: break-word;
+  color: $black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 60%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author_info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.username {
+  color: $black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 85%;
+}
+
+.publication_date {
+  color: $black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 50%;
+}

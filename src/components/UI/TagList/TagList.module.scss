@@ -1,0 +1,12 @@
+.tag_list {
+  display: flex;
+  column-gap: 8px;
+  row-gap: 5px;
+  max-width: 640px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  max-width: 600px;
+  overflow: hidden;
+}
