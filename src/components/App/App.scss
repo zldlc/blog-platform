@@ -131,7 +131,7 @@ ul {
   list-style: none;
 }
 
-.btn-reset {
+button {
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -139,6 +139,6 @@ ul {
 }
 
 body {
-  background-color: $grey;
+  background-color: $bg-grey;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }

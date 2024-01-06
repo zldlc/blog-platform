@@ -10,7 +10,7 @@ interface ITagListProps {
 
 const TagList: FC<ITagListProps> = ({ tags }) => {
   function createTag(tag: string, index: number) {
-    if (!tag || !tag.trim()) {
+    if (!tag || !tag.trim() || /\u3164/.test(tag)) {
       return null;
     }
 

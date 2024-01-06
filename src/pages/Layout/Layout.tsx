@@ -10,10 +10,10 @@ const Layout = () => {
           Realworld Blog
         </Link>
         <div className={style.profile_nav}>
-          <Link to={'/'} className={style.sign_in_btn}>
+          <Link to={'/sign-in'} className={style.sign_in_btn}>
             Sign In
           </Link>
-          <Link to={'/'} className={style.sign_up_btn}>
+          <Link to={'/sign-up'} className={style.sign_up_btn}>
             Sign Up
           </Link>
         </div>

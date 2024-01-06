@@ -42,7 +42,7 @@ const Article: FC<IArticleProps> = ({
         <header className={style.header}>
           <div>
             <div className={style.title_line}>
-              <Link to={`/articles/${slug}`} className={style.title}>
+              <Link to={`/articles/${slug}`} className={!isSinglePage ? style.title : style.single_page_article_title}>
                 {!isSinglePage ? cutText(title, 50) : title}
               </Link>
               <Like likesCount={favoritesCount} />
