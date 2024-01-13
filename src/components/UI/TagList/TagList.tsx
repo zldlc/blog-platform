@@ -1,5 +1,4 @@
-import React, { FC } from 'react';
-
+import { ReactElement } from 'react';
 import { Tag, ConfigProvider } from 'antd';
 
 import style from './TagList.module.scss';
@@ -8,8 +7,8 @@ interface ITagListProps {
   tags: string[];
 }
 
-const TagList: FC<ITagListProps> = ({ tags }) => {
-  function createTag(tag: string, index: number) {
+const TagList = ({ tags }: ITagListProps) => {
+  function createTag(tag: string, index: number): ReactElement | null {
     if (!tag || !tag.trim() || /\u3164/.test(tag)) {
       return null;
     }

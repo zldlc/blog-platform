@@ -1,17 +1,16 @@
-import { FC, ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
 import TagList from '../UI/TagList/TagList';
 import Like from '../UI/Like/Like';
-
-import { format } from 'date-fns';
 
 import cutText from '../../utility/cutText';
 
 import { IAuthor } from '../../types/types';
 
 import style from './Article.module.scss';
-import defaultAvatar from '../../assets/img/defaultAvatar.png';
+
+import UserInfo from '../UserInfo/UserInfo';
 
 interface IArticleProps {
   title: string;
@@ -25,7 +24,7 @@ interface IArticleProps {
   isSinglePage?: boolean;
 }
 
-const Article: FC<IArticleProps> = ({
+const Article = ({
   title,
   description,
   favoritesCount,
@@ -35,7 +34,7 @@ const Article: FC<IArticleProps> = ({
   createdAt,
   isSinglePage,
   children,
-}) => {
+}: IArticleProps) => {
   return (
     <article className={!isSinglePage ? style.article : [style.article, style.single_page_article].join(' ')}>
       <div>
@@ -49,18 +48,7 @@ const Article: FC<IArticleProps> = ({
             </div>
             <TagList tags={tagList} />
           </div>
-          <div className={style.author}>
-            <div className={style.author_info}>
-              <span className={style.username}>{author.username}</span>
-              <span className={style.publication_date}>{format(new Date(createdAt), 'MMMM d, yyyy')}</span>
-            </div>
-            <img
-              src={author.image}
-              onError={(e) => (e.currentTarget.src = defaultAvatar)}
-              alt="user icon"
-              className={style.user_icon}
-            />
-          </div>
+          <UserInfo author={author} createdAt={createdAt} />
         </header>
         <p className={style.description}>{!isSinglePage ? cutText(description, 160) : description}</p>
       </div>

@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import { useAppDispatch, useAppSelector } from '../../../stores/hooks';
 import { setCurrentPage } from '../../../stores/slices/articlesSlice';
 
@@ -8,11 +7,11 @@ interface IArticlesPaginationProps {
   totalResults: number;
 }
 
-const ArticlesPagination: FC<IArticlesPaginationProps> = ({ totalResults }) => {
+const ArticlesPagination = ({ totalResults }: IArticlesPaginationProps) => {
   const dispatch = useAppDispatch();
-  const currentPage = useAppSelector((state) => state.articlesList.currentPage);
+  const { currentPage } = useAppSelector((state) => state.articlesList);
 
-  const changeCurrentPage = (currentPage: number) => {
+  const changeCurrentPage = (currentPage: number): void => {
     dispatch(setCurrentPage(currentPage));
   };
 

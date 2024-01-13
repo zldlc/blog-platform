@@ -1,0 +1,110 @@
+@import '../../assets/colors/colors-variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 22px;
+  margin-bottom: 26px;
+  height: 80px;
+  width: 100%;
+  background-color: $white;
+}
+
+.logo_btn {
+  color: $black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 85%;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.sign_in_btn {
+  color: $black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 85%;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.sign_up_btn {
+  padding: 10px 18px;
+  border: 1px solid $success-color;
+  color: $success-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 5px;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $success-color;
+    color: $white;
+  }
+}
+
+.create_article_btn {
+  padding: 6px 10px;
+  min-width: 112px;
+  min-height: 32px;
+  border: 1px solid $success-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $success-color;
+  border-radius: 5px;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $success-color;
+    color: $white;
+  }
+}
+
+.log_out_btn {
+  padding: 10px 18px;
+  border: 1px solid $black;
+  color: $black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 5px;
+  transition:
+    color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid $grey;
+    color: $grey;
+  }
+}
+
+.edit_profile_btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $bg-grey;
+  }
+}
+
+.profile_nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}

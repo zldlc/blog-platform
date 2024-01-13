@@ -13,6 +13,13 @@
   box-shadow: 0 4px 12px rgba($black, $alpha: 0.15);
 }
 
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
 .title {
   color: $black;
   font-size: 20px;
@@ -43,9 +50,14 @@
 
 .checkbox_label {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
   padding-top: 8px;
   border-top: 1px solid $input-stroke-grey;
+}
+
+.agree_policy {
+  display: flex;
+  gap: 8px;
 }
 
 .checkbox_text {
@@ -89,6 +101,16 @@
   text-align: center;
   background-color: $main-blue;
   border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $hover-blue;
+  }
+
+  &:disabled {
+    background-color: $input-stroke-grey;
+    cursor: default;
+  }
 }
 
 .footer {
@@ -113,4 +135,16 @@
   &:hover {
     color: $hover-blue;
   }
+}
+
+.edit_form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 384px;
+  margin: 0 auto;
+}
+
+.success_alert {
+  text-align: center;
 }

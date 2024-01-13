@@ -1,0 +1,36 @@
+@import '../../assets/colors/colors-variables.scss';
+
+.user_icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author_info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.username {
+  color: $black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 85%;
+}
+
+.publication_date {
+  color: $black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 50%;
+}

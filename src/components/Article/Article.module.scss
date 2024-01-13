@@ -59,13 +59,6 @@
   cursor: default;
 }
 
-.user_icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .description {
   max-width: 642px;
   overflow-wrap: break-word;
@@ -74,32 +67,4 @@
   font-weight: 400;
   line-height: 22px;
   opacity: 60%;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.author_info {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.username {
-  color: $black;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  opacity: 85%;
-}
-
-.publication_date {
-  color: $black;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 22px;
-  opacity: 50%;
 }

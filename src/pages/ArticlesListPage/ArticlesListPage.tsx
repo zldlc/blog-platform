@@ -10,7 +10,7 @@ import { Alert } from 'antd';
 import style from './ArticleListPage.module.scss';
 
 const ArticlesListPage = () => {
-  const currentPage = useAppSelector((state) => state.articlesList.currentPage);
+  const { currentPage } = useAppSelector((state) => state.articlesList);
   const { data, isLoading, isError } = useGetArticlesQuery(currentPage * 5 - 5);
 
   if (isLoading) {

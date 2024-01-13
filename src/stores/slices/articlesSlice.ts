@@ -9,7 +9,7 @@ const initialState: articlesListState = {
 };
 
 const articlesListSlice = createSlice({
-  name: 'searchTickets',
+  name: 'articlesList',
   initialState,
   reducers: {
     setCurrentPage: (state, action: PayloadAction<number>) => {
