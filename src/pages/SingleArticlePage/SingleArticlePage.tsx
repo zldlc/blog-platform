@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useGetSingleArticleQuery } from '../../stores/api/blogApi';
+import { useAppSelector } from '../../stores/hooks';
 
 import Article from '../../components/Article/Article';
 import Spinner from '../../components/UI/Spinner/Spinner';
@@ -7,14 +8,13 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import Markdown from 'react-markdown';
 import Alert from 'antd/es/alert/Alert';
 
-import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
-
 const SingleArticlePage = () => {
+  const { user } = useAppSelector((state) => state.user);
   const { slug } = useParams();
   const articleSlug = slug ? slug : '';
   const { data, isError, isLoading } = useGetSingleArticleQuery({
     slug: articleSlug,
-    token: getCurrentUserToken(),
+    token: user?.user.token || null,
   });
 
   if (isLoading) {

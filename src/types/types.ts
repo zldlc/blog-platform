@@ -1,5 +1,5 @@
 interface IToken {
-  token: string;
+  token: string | null;
 }
 
 interface ILoggedUser extends IToken {

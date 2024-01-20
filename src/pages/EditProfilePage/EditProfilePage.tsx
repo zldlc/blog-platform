@@ -10,7 +10,6 @@ import Alert from 'antd/es/alert/Alert';
 
 import { handleEnterPress } from '../../utility/handleEnterPress';
 import { showInputErrors } from '../../utility/showInputErrors';
-import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
 
 import { ICustomError } from '../../types/types';
 
@@ -75,7 +74,7 @@ const EditProfilePage = () => {
 
     editUserProfile({
       body: { user: requestObj },
-      token: getCurrentUserToken(),
+      token: user?.user.token || null,
     });
   };
 

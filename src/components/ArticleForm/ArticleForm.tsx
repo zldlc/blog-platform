@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useFieldArray, useForm, SubmitHandler } from 'react-hook-form';
 import { useCreateAnArticleMutation, useUpdateAnArticleMutation } from '../../stores/api/blogApi';
 import { useNavigate } from 'react-router-dom';
+import { useAppSelector } from '../../stores/hooks';
 
 import Input from '../UI/Input/Input';
 
@@ -9,7 +10,6 @@ import Alert from 'antd/es/alert/Alert';
 
 import { handleEnterPress } from '../../utility/handleEnterPress';
 import { showInputErrors } from '../../utility/showInputErrors';
-import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
 
 import { IArticleBody } from '../../types/types';
 
@@ -39,6 +39,7 @@ interface IFormInput {
 }
 
 const ArticleForm = ({ data, isEditing }: IArticleFormProps) => {
+  const { user } = useAppSelector(state => state.user)
   const [addTagInputValue, setAddTagInputValue] = useState<string>('');
   const [showSuccessAlert, setShowSuccessAlert] = useState<boolean>(false);
   const navigate = useNavigate();
@@ -102,13 +103,13 @@ const ArticleForm = ({ data, isEditing }: IArticleFormProps) => {
     if (isEditing) {
       await editAnArticle({
         body: requestBody,
-        token: getCurrentUserToken(),
+        token: user?.user.token || null,
         slug: data?.slug || '',
       });
     } else {
       await createAnArticle({
         body: requestBody,
-        token: getCurrentUserToken(),
+        token: user?.user.token || null,
       });
       reset();
     }

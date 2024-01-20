@@ -10,7 +10,6 @@ import UserInfo from '../UserInfo/UserInfo';
 import { Popconfirm } from 'antd';
 
 import { cutText } from '../../utility/cutText';
-import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
 
 import { IAuthor } from '../../types/types';
 
@@ -74,7 +73,7 @@ const Article = ({
             <div className={style.article_btn_block}>
               <Popconfirm
                 title="Are you sure to delete this article?"
-                onConfirm={() => deleteArticle({ slug, token: getCurrentUserToken() })}
+                onConfirm={() => deleteArticle({ slug, token: user.user.token })}
                 placement="rightTop"
                 okText="Yes"
                 cancelText="No"

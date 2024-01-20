@@ -8,15 +8,15 @@ import Article from '../../components/Article/Article';
 import { Alert } from 'antd';
 
 import { randomizeId } from '../../utility/randomizeId';
-import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
 
 import style from './ArticleListPage.module.scss';
 
 const ArticlesListPage = () => {
   const { currentPage } = useAppSelector((state) => state.articlesList);
+  const { user } = useAppSelector((state) => state.user);
   const { data, isLoading, isError } = useGetArticlesQuery({
     offset: currentPage * 5 - 5,
-    token: getCurrentUserToken(),
+    token: user?.user.token || null,
   });
 
   if (isLoading) {

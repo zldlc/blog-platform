@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { useAppSelector } from '../../../stores/hooks';
 import { useToggleLikeMutation } from '../../../stores/api/blogApi';
 
-import { getCurrentUserToken } from '../../../utility/getCurrentUserToken';
-
 import style from './Like.module.scss';
 
 interface ILikeProps {
@@ -20,7 +18,7 @@ const Like = ({ likesCount, favorited, slug }: ILikeProps) => {
   const onLike = async (): Promise<void> => {
     await toggleLike({
       slug,
-      token: getCurrentUserToken(),
+      token: user?.user.token || null,
       isLike,
     });
 
