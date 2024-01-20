@@ -1,4 +1,4 @@
-export default function checkLocation(notSaveHistoryPage: string, location: string): string {
+export const checkLocation = (notSaveHistoryPage: string, location: string): string => {
   if (location === notSaveHistoryPage) {
     return '/';
   }
@@ -8,4 +8,4 @@ export default function checkLocation(notSaveHistoryPage: string, location: stri
   }
 
   return '/';
-}
+};

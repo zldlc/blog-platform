@@ -10,6 +10,7 @@ import Alert from 'antd/es/alert/Alert';
 
 import { handleEnterPress } from '../../utility/handleEnterPress';
 import { showInputErrors } from '../../utility/showInputErrors';
+import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
 
 import { ICustomError } from '../../types/types';
 
@@ -32,7 +33,7 @@ const EditProfilePage = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm<IEditProfileForm>({
     mode: 'onBlur',
     criteriaMode: 'all',
@@ -59,7 +60,7 @@ const EditProfilePage = () => {
     // eslint-disable-next-line
   }, [data]);
 
-  const onSubmit: SubmitHandler<IEditProfileForm> = async (data) => {
+  const onSubmit: SubmitHandler<IEditProfileForm> = async (data: IEditProfileForm) => {
     const { email, image, password, username } = data;
 
     const requestObj: IEditProfileForm = {
@@ -74,7 +75,7 @@ const EditProfilePage = () => {
 
     editUserProfile({
       body: { user: requestObj },
-      token: user?.user.token || null,
+      token: getCurrentUserToken(),
     });
   };
 
@@ -163,7 +164,7 @@ const EditProfilePage = () => {
           </label>
         </div>
         <footer className={style.footer}>
-          <button className={style.button} onClick={handleSubmit(onSubmit)} disabled={!isValid}>
+          <button className={style.button} onClick={handleSubmit(onSubmit)}>
             Save
           </button>
         </footer>

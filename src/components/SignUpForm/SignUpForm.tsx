@@ -9,7 +9,7 @@ import Input from '../UI/Input/Input';
 
 import { Alert } from 'antd';
 
-import checkLocation from '../../utility/checkLocation';
+import { checkLocation } from '../../utility/checkLocation';
 import { showInputErrors } from '../../utility/showInputErrors';
 import { handleEnterPress } from '../../utility/handleEnterPress';
 
@@ -30,7 +30,6 @@ const SignUpForm = () => {
   const dispatch = useAppDispatch();
   const location = useLocation();
   const fromPage = location.state?.from?.pathname;
-
   const [signUpUser, { data, isError, error, isSuccess }] = useSignUpUserMutation();
   const customError = error as ICustomError;
 

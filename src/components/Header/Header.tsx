@@ -5,7 +5,7 @@ import { logOutUser } from '../../stores/slices/userSlice';
 
 import UserInfo from '../UserInfo/UserInfo';
 
-import { IGettedRegisteredUser } from '../../types/types';
+import { IUserResponse } from '../../types/types';
 
 import style from './Header.module.scss';
 
@@ -15,7 +15,7 @@ const Header = () => {
   const location = useLocation();
   const { user } = useAppSelector((state) => state.user);
 
-  const profileNav = (user: IGettedRegisteredUser | null): ReactElement => {
+  const profileNav = (user: IUserResponse | null): ReactElement => {
     if (user) {
       const { username, image } = user.user;
       const userInfo = {
@@ -25,7 +25,7 @@ const Header = () => {
 
       return (
         <div className={style.profile_nav}>
-          <Link to={'/'} className={style.create_article_btn}>
+          <Link to={'/new-article'} className={style.create_article_btn}>
             Create article
           </Link>
           <Link to={'/profile'} className={style.edit_profile_btn}>

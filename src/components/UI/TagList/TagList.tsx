@@ -2,19 +2,20 @@ import { ReactElement } from 'react';
 import { Tag, ConfigProvider } from 'antd';
 
 import style from './TagList.module.scss';
+import { randomizeId } from '../../../utility/randomizeId';
 
 interface ITagListProps {
   tags: string[];
 }
 
 const TagList = ({ tags }: ITagListProps) => {
-  function createTag(tag: string, index: number): ReactElement | null {
+  function createTag(tag: string): ReactElement | null {
     if (!tag || !tag.trim() || /\u3164/.test(tag)) {
       return null;
     }
 
     return (
-      <li key={index}>
+      <li key={randomizeId()}>
         <Tag className={style.tag}>{tag}</Tag>
       </li>
     );
@@ -35,7 +36,7 @@ const TagList = ({ tags }: ITagListProps) => {
         },
       }}
     >
-      <ul className={style.tag_list}>{tags ? tags.map((tag, index) => createTag(tag, index)) : null}</ul>
+      <ul className={style.tag_list}>{tags ? tags.map((tag) => createTag(tag)) : null}</ul>
     </ConfigProvider>
   );
 };

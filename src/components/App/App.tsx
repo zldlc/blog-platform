@@ -7,6 +7,9 @@ import SingleArticlePage from '../../pages/SingleArticlePage/SingleArticlePage';
 import SignUpPage from '../../pages/SignUpPage/SignUpPage';
 import SignInPage from '../../pages/SignInPage/SignInPage';
 import EditProfilePage from '../../pages/EditProfilePage/EditProfilePage';
+import CreateArticlePage from '../../pages/CreateArticlePage/CreateArticlePage';
+import EditArticlePage from '../../pages/EditArticlePage/EditArticlePage';
+import RequireAuth from '../../hoc/RequireAuth';
 
 import './App.scss';
 
@@ -19,7 +22,30 @@ const App = () => {
         <Route path="/articles/:slug" element={<SingleArticlePage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/sign-in" element={<SignInPage />} />
-        <Route path="/profile" element={<EditProfilePage />} />
+        <Route
+          path="/profile"
+          element={
+            <RequireAuth>
+              <EditProfilePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/new-article"
+          element={
+            <RequireAuth>
+              <CreateArticlePage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/articles/:slug/edit"
+          element={
+            <RequireAuth>
+              <EditArticlePage />
+            </RequireAuth>
+          }
+        />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
@@ -27,7 +53,3 @@ const App = () => {
 };
 
 export default App;
-
-// Объединить все формы в одну папку и сделать общие стили
-
-// функция рандомизации id, приватные роуты

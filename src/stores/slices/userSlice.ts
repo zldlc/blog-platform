@@ -1,8 +1,8 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { IGettedRegisteredUser } from '../../types/types';
+import { IUserResponse } from '../../types/types';
 
 interface IUserState {
-  user: IGettedRegisteredUser | null;
+  user: IUserResponse | null;
 }
 
 const loggedUserString = localStorage.getItem('loggedUser');
@@ -16,7 +16,7 @@ const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    registerUser: (state, action: PayloadAction<IGettedRegisteredUser>) => {
+    registerUser: (state, action: PayloadAction<IUserResponse>) => {
       state.user = action.payload;
       localStorage.setItem('loggedUser', JSON.stringify(action.payload));
     },
@@ -24,11 +24,11 @@ const userSlice = createSlice({
       state.user = action.payload;
       localStorage.clear();
     },
-    loginUser: (state, action: PayloadAction<IGettedRegisteredUser>) => {
+    loginUser: (state, action: PayloadAction<IUserResponse>) => {
       state.user = action.payload;
       localStorage.setItem('loggedUser', JSON.stringify(action.payload));
     },
-    updateUser: (state, action: PayloadAction<IGettedRegisteredUser>) => {
+    updateUser: (state, action: PayloadAction<IUserResponse>) => {
       state.user = action.payload;
       localStorage.setItem('loggedUser', JSON.stringify(action.payload));
     },

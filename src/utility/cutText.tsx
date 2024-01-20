@@ -1,4 +1,4 @@
-export default function cutText(text: string, limit: number): string | null {
+export const cutText = (text: string, limit: number): string | null => {
   if (!text) {
     return null;
   }
@@ -11,4 +11,4 @@ export default function cutText(text: string, limit: number): string | null {
   const sliced: string = text.slice(0, lastSpaceIndex);
 
   return `${sliced}...`;
-}
+};

@@ -1,0 +1,113 @@
+Date : 2024-01-20 15:16:31
+Directory : d:\Kata\React\blog-platform\src
+Total : 51 files,  2388 codes, 138 comments, 430 blanks, all 2956 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript JSX |         25 |      1,162 |          7 |        198 |      1,367 |
+| SCSS           |         14 |        756 |          0 |        111 |        867 |
+| TypeScript     |         11 |        324 |          0 |         46 |        370 |
+| CSS            |          1 |        146 |        131 |         75 |        352 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         51 |      2,388 |        138 |        430 |      2,956 |
+| . (Files)                                                                               |          1 |         13 |          0 |          4 |         17 |
+| assets                                                                                  |          2 |        157 |        131 |         76 |        364 |
+| assets (Files)                                                                          |          1 |        146 |        131 |         75 |        352 |
+| assets\colors                                                                           |          1 |         11 |          0 |          1 |         12 |
+| components                                                                              |         22 |      1,532 |          6 |        219 |      1,757 |
+| components\App                                                                          |          2 |        185 |          2 |         18 |        205 |
+| components\Article                                                                      |          2 |        190 |          0 |         27 |        217 |
+| components\ArticleForm                                                                  |          2 |        292 |          2 |         37 |        331 |
+| components\Header                                                                       |          2 |        161 |          0 |         26 |        187 |
+| components\SignInForm                                                                   |          1 |         99 |          1 |         13 |        113 |
+| components\SignUpForm                                                                   |          2 |        301 |          1 |         35 |        337 |
+| components\UI                                                                           |          9 |        244 |          0 |         49 |        293 |
+| components\UI\ArticlesPagination                                                        |          1 |         38 |          0 |          7 |         45 |
+| components\UI\Input                                                                     |          2 |         65 |          0 |         12 |         77 |
+| components\UI\Like                                                                      |          2 |         77 |          0 |         16 |         93 |
+| components\UI\Spinner                                                                   |          2 |         15 |          0 |          5 |         20 |
+| components\UI\TagList                                                                   |          2 |         49 |          0 |          9 |         58 |
+| components\UserInfo                                                                     |          2 |         60 |          0 |         14 |         74 |
+| hoc                                                                                     |          1 |         15 |          0 |          6 |         21 |
+| pages                                                                                   |         12 |        327 |          1 |         71 |        399 |
+| pages\ArticlesListPage                                                                  |          2 |         49 |          0 |         13 |         62 |
+| pages\CreateArticlePage                                                                 |          1 |          5 |          0 |          3 |          8 |
+| pages\EditArticlePage                                                                   |          1 |         21 |          0 |          6 |         27 |
+| pages\EditProfilePage                                                                   |          1 |        161 |          1 |         18 |        180 |
+| pages\Layout                                                                            |          2 |         19 |          0 |          7 |         26 |
+| pages\NotFoundPage                                                                      |          2 |         35 |          0 |          9 |         44 |
+| pages\SignInPage                                                                        |          1 |          5 |          0 |          3 |          8 |
+| pages\SignUpPage                                                                        |          1 |          5 |          0 |          3 |          8 |
+| pages\SingleArticlePage                                                                 |          1 |         27 |          0 |          9 |         36 |
+| stores                                                                                  |          5 |        196 |          0 |         20 |        216 |
+| stores (Files)                                                                          |          2 |         18 |          0 |          5 |         23 |
+| stores\api                                                                              |          1 |        126 |          0 |          4 |        130 |
+| stores\slices                                                                           |          2 |         52 |          0 |         11 |         63 |
+| types                                                                                   |          2 |        106 |          0 |         21 |        127 |
+| utility                                                                                 |          6 |         42 |          0 |         13 |         55 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                | language       | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\Kata\React\blog-platform\src\assets\colors\colors-variables.scss                     | SCSS           |         11 |          0 |          1 |         12 |
+| d:\Kata\React\blog-platform\src\assets\normalize.css                                    | CSS            |        146 |        131 |         75 |        352 |
+| d:\Kata\React\blog-platform\src\components\App\App.scss                                 | SCSS           |        134 |          0 |         11 |        145 |
+| d:\Kata\React\blog-platform\src\components\App\App.tsx                                  | TypeScript JSX |         51 |          2 |          7 |         60 |
+| d:\Kata\React\blog-platform\src\components\ArticleForm\ArticleForm.module.scss          | SCSS           |        124 |          0 |         17 |        141 |
+| d:\Kata\React\blog-platform\src\components\ArticleForm\ArticleForm.tsx                  | TypeScript JSX |        168 |          2 |         20 |        190 |
+| d:\Kata\React\blog-platform\src\components\Article\Article.module.scss                  | SCSS           |        105 |          0 |         16 |        121 |
+| d:\Kata\React\blog-platform\src\components\Article\Article.tsx                          | TypeScript JSX |         85 |          0 |         11 |         96 |
+| d:\Kata\React\blog-platform\src\components\Header\Header.module.scss                    | SCSS           |         96 |          0 |         15 |        111 |
+| d:\Kata\React\blog-platform\src\components\Header\Header.tsx                            | TypeScript JSX |         65 |          0 |         11 |         76 |
+| d:\Kata\React\blog-platform\src\components\SignInForm\SignInForm.tsx                    | TypeScript JSX |         99 |          1 |         13 |        113 |
+| d:\Kata\React\blog-platform\src\components\SignUpForm\Forms.module.scss                 | SCSS           |        130 |          0 |         21 |        151 |
+| d:\Kata\React\blog-platform\src\components\SignUpForm\SignUpForm.tsx                    | TypeScript JSX |        171 |          1 |         14 |        186 |
+| d:\Kata\React\blog-platform\src\components\UI\ArticlesPagination\ArticlesPagination.tsx | TypeScript JSX |         38 |          0 |          7 |         45 |
+| d:\Kata\React\blog-platform\src\components\UI\Input\Input.module.scss                   | SCSS           |         23 |          0 |          4 |         27 |
+| d:\Kata\React\blog-platform\src\components\UI\Input\Input.tsx                           | TypeScript JSX |         42 |          0 |          8 |         50 |
+| d:\Kata\React\blog-platform\src\components\UI\Like\Like.module.scss                     | SCSS           |         46 |          0 |          7 |         53 |
+| d:\Kata\React\blog-platform\src\components\UI\Like\Like.tsx                             | TypeScript JSX |         31 |          0 |          9 |         40 |
+| d:\Kata\React\blog-platform\src\components\UI\Spinner\Spinner.scss                      | SCSS           |          5 |          0 |          1 |          6 |
+| d:\Kata\React\blog-platform\src\components\UI\Spinner\Spinner.tsx                       | TypeScript JSX |         10 |          0 |          4 |         14 |
+| d:\Kata\React\blog-platform\src\components\UI\TagList\TagList.module.scss               | SCSS           |         11 |          0 |          2 |         13 |
+| d:\Kata\React\blog-platform\src\components\UI\TagList\TagList.tsx                       | TypeScript JSX |         38 |          0 |          7 |         45 |
+| d:\Kata\React\blog-platform\src\components\UserInfo\UserInfo.module.scss                | SCSS           |         31 |          0 |          6 |         37 |
+| d:\Kata\React\blog-platform\src\components\UserInfo\UserInfo.tsx                        | TypeScript JSX |         29 |          0 |          8 |         37 |
+| d:\Kata\React\blog-platform\src\hoc\RequireAuth.tsx                                     | TypeScript JSX |         15 |          0 |          6 |         21 |
+| d:\Kata\React\blog-platform\src\index.tsx                                               | TypeScript JSX |         13 |          0 |          4 |         17 |
+| d:\Kata\React\blog-platform\src\pages\ArticlesListPage\ArticleListPage.module.scss      | SCSS           |         14 |          0 |          3 |         17 |
+| d:\Kata\React\blog-platform\src\pages\ArticlesListPage\ArticlesListPage.tsx             | TypeScript JSX |         35 |          0 |         10 |         45 |
+| d:\Kata\React\blog-platform\src\pages\CreateArticlePage\CreateArticlePage.tsx           | TypeScript JSX |          5 |          0 |          3 |          8 |
+| d:\Kata\React\blog-platform\src\pages\EditArticlePage\EditArticlePage.tsx               | TypeScript JSX |         21 |          0 |          6 |         27 |
+| d:\Kata\React\blog-platform\src\pages\EditProfilePage\EditProfilePage.tsx               | TypeScript JSX |        161 |          1 |         18 |        180 |
+| d:\Kata\React\blog-platform\src\pages\Layout\Layout.module.scss                         | SCSS           |          5 |          0 |          2 |          7 |
+| d:\Kata\React\blog-platform\src\pages\Layout\Layout.tsx                                 | TypeScript JSX |         14 |          0 |          5 |         19 |
+| d:\Kata\React\blog-platform\src\pages\NotFoundPage\NotFoundPage.module.scss             | SCSS           |         21 |          0 |          5 |         26 |
+| d:\Kata\React\blog-platform\src\pages\NotFoundPage\NotFoundPage.tsx                     | TypeScript JSX |         14 |          0 |          4 |         18 |
+| d:\Kata\React\blog-platform\src\pages\SignInPage\SignInPage.tsx                         | TypeScript JSX |          5 |          0 |          3 |          8 |
+| d:\Kata\React\blog-platform\src\pages\SignUpPage\SignUpPage.tsx                         | TypeScript JSX |          5 |          0 |          3 |          8 |
+| d:\Kata\React\blog-platform\src\pages\SingleArticlePage\SingleArticlePage.tsx           | TypeScript JSX |         27 |          0 |          9 |         36 |
+| d:\Kata\React\blog-platform\src\stores\api\blogApi.ts                                   | TypeScript     |        126 |          0 |          4 |        130 |
+| d:\Kata\React\blog-platform\src\stores\hooks.ts                                         | TypeScript     |          4 |          0 |          2 |          6 |
+| d:\Kata\React\blog-platform\src\stores\index.ts                                         | TypeScript     |         14 |          0 |          3 |         17 |
+| d:\Kata\React\blog-platform\src\stores\slices\articlesSlice.ts                          | TypeScript     |         18 |          0 |          5 |         23 |
+| d:\Kata\React\blog-platform\src\stores\slices\userSlice.ts                              | TypeScript     |         34 |          0 |          6 |         40 |
+| d:\Kata\React\blog-platform\src\types\index.d.ts                                        | TypeScript     |          3 |          0 |          1 |          4 |
+| d:\Kata\React\blog-platform\src\types\types.ts                                          | TypeScript     |        103 |          0 |         20 |        123 |
+| d:\Kata\React\blog-platform\src\utility\checkLocation.ts                                | TypeScript     |          9 |          0 |          3 |         12 |
+| d:\Kata\React\blog-platform\src\utility\cutText.tsx                                     | TypeScript JSX |         11 |          0 |          4 |         15 |
+| d:\Kata\React\blog-platform\src\utility\getCurrentUserToken.ts                          | TypeScript     |          5 |          0 |          1 |          6 |
+| d:\Kata\React\blog-platform\src\utility\handleEnterPress.ts                             | TypeScript     |          5 |          0 |          1 |          6 |
+| d:\Kata\React\blog-platform\src\utility\randomizeId.ts                                  | TypeScript     |          3 |          0 |          0 |          3 |
+| d:\Kata\React\blog-platform\src\utility\showInputErrors.tsx                             | TypeScript JSX |          9 |          0 |          4 |         13 |
+| Total                                                                                   |                |      2,388 |        138 |        430 |      2,956 |
++-----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

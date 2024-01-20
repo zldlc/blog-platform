@@ -7,10 +7,15 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import Markdown from 'react-markdown';
 import Alert from 'antd/es/alert/Alert';
 
+import { getCurrentUserToken } from '../../utility/getCurrentUserToken';
+
 const SingleArticlePage = () => {
   const { slug } = useParams();
   const articleSlug = slug ? slug : '';
-  const { data, isError, isLoading } = useGetSingleArticleQuery(articleSlug);
+  const { data, isError, isLoading } = useGetSingleArticleQuery({
+    slug: articleSlug,
+    token: getCurrentUserToken(),
+  });
 
   if (isLoading) {
     return <Spinner />;
@@ -21,7 +26,7 @@ const SingleArticlePage = () => {
   }
 
   return data ? (
-    <Article {...data.article} isSinglePage={true}>
+    <Article {...data.article} isSinglePage={true} articleText={data.article.body}>
       <Markdown>{data.article.body}</Markdown>
     </Article>
   ) : null;

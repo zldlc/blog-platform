@@ -1,0 +1,140 @@
+@import '../../assets/colors/colors-variables.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 48px 32px;
+  margin: 0 auto;
+  width: 938px;
+  min-height: 700px;
+  background-color: $white;
+  border-radius: 6px;
+  margin-bottom: 26px;
+  box-shadow: 0 4px 12px rgba($black, $alpha: 0.15);
+  margin-bottom: 20px;
+}
+
+.title {
+  color: $black;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  opacity: 90%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.tags_block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tags_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input_title {
+  color: $black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 90%;
+}
+
+.textarea {
+  padding: 8px 12px;
+  width: 100%;
+  min-width: 320px;
+  height: 168px;
+  color: $black;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid $input-stroke-grey;
+  border-radius: 4px;
+  opacity: 85%;
+  resize: none;
+
+  &::placeholder {
+    font-family: 'Inter';
+    color: $input-stroke-grey;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.input_error {
+  border: 1px solid $danger-red;
+}
+
+.add_tag_block {
+  display: flex;
+  gap: 17px;
+  width: 470px;
+}
+
+.delete_tag_btn {
+  padding: 8px 36px;
+  color: $danger-red;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid $danger-red;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $danger-red;
+    color: $white;
+  }
+}
+
+.add_tag_btn {
+  padding: 8px 32px;
+  color: $main-blue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid $main-blue;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $main-blue;
+    color: $white;
+  }
+}
+
+.send_btn {
+  align-self: flex-start;
+  padding: 8px 140px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: $main-blue;
+  border-radius: 4px;
+}
+
+.success_alert {
+  text-align: center;
+  margin-bottom: 26px;
+}

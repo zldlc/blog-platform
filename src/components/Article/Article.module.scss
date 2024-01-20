@@ -16,12 +16,17 @@
 
 .single_page_article {
   min-height: 800px;
+  margin-bottom: 20px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4px;
+}
+
+.single_page_header {
+  margin-bottom: 16px;
 }
 
 .title_line {
@@ -67,4 +72,51 @@
   font-weight: 400;
   line-height: 22px;
   opacity: 60%;
+}
+
+.delete_article_btn {
+  padding: 6px 18px;
+  color: $danger-red;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  border: 1px solid $danger-red;
+  border-radius: 5px;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $danger-red;
+    color: $white;
+  }
+}
+
+.edit_article_btn {
+  padding: 6px 20px;
+  color: $success-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  border: 1px solid $success-color;
+  border-radius: 5px;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $success-color;
+    color: $white;
+  }
+}
+
+.article_btn_block {
+  display: flex;
+  align-self: flex-start;
+  gap: 12px;
+}
+
+.description_block {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,0 +1,53 @@
+"filename", "language", "SCSS", "TypeScript JSX", "TypeScript", "CSS", "comment", "blank", "total"
+"d:\Kata\React\blog-platform\src\assets\colors\colors-variables.scss", "SCSS", 11, 0, 0, 0, 0, 1, 12
+"d:\Kata\React\blog-platform\src\assets\normalize.css", "CSS", 0, 0, 0, 146, 131, 75, 352
+"d:\Kata\React\blog-platform\src\components\App\App.scss", "SCSS", 134, 0, 0, 0, 0, 11, 145
+"d:\Kata\React\blog-platform\src\components\App\App.tsx", "TypeScript JSX", 0, 51, 0, 0, 2, 7, 60
+"d:\Kata\React\blog-platform\src\components\ArticleForm\ArticleForm.module.scss", "SCSS", 124, 0, 0, 0, 0, 17, 141
+"d:\Kata\React\blog-platform\src\components\ArticleForm\ArticleForm.tsx", "TypeScript JSX", 0, 168, 0, 0, 2, 20, 190
+"d:\Kata\React\blog-platform\src\components\Article\Article.module.scss", "SCSS", 105, 0, 0, 0, 0, 16, 121
+"d:\Kata\React\blog-platform\src\components\Article\Article.tsx", "TypeScript JSX", 0, 85, 0, 0, 0, 11, 96
+"d:\Kata\React\blog-platform\src\components\Header\Header.module.scss", "SCSS", 96, 0, 0, 0, 0, 15, 111
+"d:\Kata\React\blog-platform\src\components\Header\Header.tsx", "TypeScript JSX", 0, 65, 0, 0, 0, 11, 76
+"d:\Kata\React\blog-platform\src\components\SignInForm\SignInForm.tsx", "TypeScript JSX", 0, 99, 0, 0, 1, 13, 113
+"d:\Kata\React\blog-platform\src\components\SignUpForm\Forms.module.scss", "SCSS", 130, 0, 0, 0, 0, 21, 151
+"d:\Kata\React\blog-platform\src\components\SignUpForm\SignUpForm.tsx", "TypeScript JSX", 0, 171, 0, 0, 1, 14, 186
+"d:\Kata\React\blog-platform\src\components\UI\ArticlesPagination\ArticlesPagination.tsx", "TypeScript JSX", 0, 38, 0, 0, 0, 7, 45
+"d:\Kata\React\blog-platform\src\components\UI\Input\Input.module.scss", "SCSS", 23, 0, 0, 0, 0, 4, 27
+"d:\Kata\React\blog-platform\src\components\UI\Input\Input.tsx", "TypeScript JSX", 0, 42, 0, 0, 0, 8, 50
+"d:\Kata\React\blog-platform\src\components\UI\Like\Like.module.scss", "SCSS", 46, 0, 0, 0, 0, 7, 53
+"d:\Kata\React\blog-platform\src\components\UI\Like\Like.tsx", "TypeScript JSX", 0, 31, 0, 0, 0, 9, 40
+"d:\Kata\React\blog-platform\src\components\UI\Spinner\Spinner.scss", "SCSS", 5, 0, 0, 0, 0, 1, 6
+"d:\Kata\React\blog-platform\src\components\UI\Spinner\Spinner.tsx", "TypeScript JSX", 0, 10, 0, 0, 0, 4, 14
+"d:\Kata\React\blog-platform\src\components\UI\TagList\TagList.module.scss", "SCSS", 11, 0, 0, 0, 0, 2, 13
+"d:\Kata\React\blog-platform\src\components\UI\TagList\TagList.tsx", "TypeScript JSX", 0, 38, 0, 0, 0, 7, 45
+"d:\Kata\React\blog-platform\src\components\UserInfo\UserInfo.module.scss", "SCSS", 31, 0, 0, 0, 0, 6, 37
+"d:\Kata\React\blog-platform\src\components\UserInfo\UserInfo.tsx", "TypeScript JSX", 0, 29, 0, 0, 0, 8, 37
+"d:\Kata\React\blog-platform\src\hoc\RequireAuth.tsx", "TypeScript JSX", 0, 15, 0, 0, 0, 6, 21
+"d:\Kata\React\blog-platform\src\index.tsx", "TypeScript JSX", 0, 13, 0, 0, 0, 4, 17
+"d:\Kata\React\blog-platform\src\pages\ArticlesListPage\ArticleListPage.module.scss", "SCSS", 14, 0, 0, 0, 0, 3, 17
+"d:\Kata\React\blog-platform\src\pages\ArticlesListPage\ArticlesListPage.tsx", "TypeScript JSX", 0, 35, 0, 0, 0, 10, 45
+"d:\Kata\React\blog-platform\src\pages\CreateArticlePage\CreateArticlePage.tsx", "TypeScript JSX", 0, 5, 0, 0, 0, 3, 8
+"d:\Kata\React\blog-platform\src\pages\EditArticlePage\EditArticlePage.tsx", "TypeScript JSX", 0, 21, 0, 0, 0, 6, 27
+"d:\Kata\React\blog-platform\src\pages\EditProfilePage\EditProfilePage.tsx", "TypeScript JSX", 0, 161, 0, 0, 1, 18, 180
+"d:\Kata\React\blog-platform\src\pages\Layout\Layout.module.scss", "SCSS", 5, 0, 0, 0, 0, 2, 7
+"d:\Kata\React\blog-platform\src\pages\Layout\Layout.tsx", "TypeScript JSX", 0, 14, 0, 0, 0, 5, 19
+"d:\Kata\React\blog-platform\src\pages\NotFoundPage\NotFoundPage.module.scss", "SCSS", 21, 0, 0, 0, 0, 5, 26
+"d:\Kata\React\blog-platform\src\pages\NotFoundPage\NotFoundPage.tsx", "TypeScript JSX", 0, 14, 0, 0, 0, 4, 18
+"d:\Kata\React\blog-platform\src\pages\SignInPage\SignInPage.tsx", "TypeScript JSX", 0, 5, 0, 0, 0, 3, 8
+"d:\Kata\React\blog-platform\src\pages\SignUpPage\SignUpPage.tsx", "TypeScript JSX", 0, 5, 0, 0, 0, 3, 8
+"d:\Kata\React\blog-platform\src\pages\SingleArticlePage\SingleArticlePage.tsx", "TypeScript JSX", 0, 27, 0, 0, 0, 9, 36
+"d:\Kata\React\blog-platform\src\stores\api\blogApi.ts", "TypeScript", 0, 0, 126, 0, 0, 4, 130
+"d:\Kata\React\blog-platform\src\stores\hooks.ts", "TypeScript", 0, 0, 4, 0, 0, 2, 6
+"d:\Kata\React\blog-platform\src\stores\index.ts", "TypeScript", 0, 0, 14, 0, 0, 3, 17
+"d:\Kata\React\blog-platform\src\stores\slices\articlesSlice.ts", "TypeScript", 0, 0, 18, 0, 0, 5, 23
+"d:\Kata\React\blog-platform\src\stores\slices\userSlice.ts", "TypeScript", 0, 0, 34, 0, 0, 6, 40
+"d:\Kata\React\blog-platform\src\types\index.d.ts", "TypeScript", 0, 0, 3, 0, 0, 1, 4
+"d:\Kata\React\blog-platform\src\types\types.ts", "TypeScript", 0, 0, 103, 0, 0, 20, 123
+"d:\Kata\React\blog-platform\src\utility\checkLocation.ts", "TypeScript", 0, 0, 9, 0, 0, 3, 12
+"d:\Kata\React\blog-platform\src\utility\cutText.tsx", "TypeScript JSX", 0, 11, 0, 0, 0, 4, 15
+"d:\Kata\React\blog-platform\src\utility\getCurrentUserToken.ts", "TypeScript", 0, 0, 5, 0, 0, 1, 6
+"d:\Kata\React\blog-platform\src\utility\handleEnterPress.ts", "TypeScript", 0, 0, 5, 0, 0, 1, 6
+"d:\Kata\React\blog-platform\src\utility\randomizeId.ts", "TypeScript", 0, 0, 3, 0, 0, 0, 3
+"d:\Kata\React\blog-platform\src\utility\showInputErrors.tsx", "TypeScript JSX", 0, 9, 0, 0, 0, 4, 13
+"Total", "-", 756, 1162, 324, 146, 138, 430, 2956

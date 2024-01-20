@@ -9,7 +9,7 @@ import Input from '../UI/Input/Input';
 
 import Alert from 'antd/es/alert/Alert';
 
-import checkLocation from '../../utility/checkLocation';
+import { checkLocation } from '../../utility/checkLocation';
 import { showInputErrors } from '../../utility/showInputErrors';
 import { handleEnterPress } from '../../utility/handleEnterPress';
 
@@ -44,7 +44,7 @@ const SignInForm = () => {
     // eslint-disable-next-line
   }, [data]);
 
-  const onSubmit: SubmitHandler<ISignInForm> = async (user) => {
+  const onSubmit: SubmitHandler<ISignInForm> = async (user: ISignInForm) => {
     user.email = user.email.toLowerCase();
     await signInUser({ user: user });
   };
@@ -95,7 +95,11 @@ const SignInForm = () => {
         </button>
         <span className={style.footer_text}>
           Don’t have an account?
-          <Link to={'/sign-up'} className={[style.footer_text, style.sign_in_link].join(' ')}>
+          <Link
+            to={'/sign-up'}
+            className={[style.footer_text, style.sign_in_link].join(' ')}
+            state={{ from: { pathname: fromPage } }}
+          >
             {' '}
             Sign Up.
           </Link>
